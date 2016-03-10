@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+
+<configuration>
+    <!-- 进行mybatis 配置 -->
+<!--     <typeAliases> -->
+        <!-- 为类型 起了别名 -->
+<!--         <typeAlias type="com.road.model.easyui.PageInfo" alias="PageInfo"/> -->
+
+<!--         <typeAlias type="com.road.model.entity.User" alias="User"/> -->
+<!--         <typeAlias type="com.road.model.vo.UserVo" alias="UserVo"/> -->
+
+<!--         <typeAlias type="com.road.model.entity.Resource" alias="Resource"/> -->
+<!--         <typeAlias type="com.road.model.entity.Role" alias="Role"/> -->
+<!--         <typeAlias type="com.road.model.entity.Organization" alias="Organization"/> -->
+<!--         <typeAlias type="com.road.model.entity.SysLog" alias="SysLog"/> -->
+<!--     </typeAliases> -->
+
+    <!-- 引入自定义 mapper 文件 -->
+    <mappers>
+        <mapper resource="classpath*:sqlMapperXml/OrganizationMapper.xml"/>
+        <mapper resource="classpath*:sqlMapperXml/UserMapper.xml"/>
+        <mapper resource="classpath*:sqlMapperXml/ResourceMapper.xml"/>
+        <mapper resource="classpath*:sqlMapperXml/RoleMapper.xml"/>
+        <mapper resource="classpath*:sqlMapperXml/UserRoleMapper.xml"/>
+        <mapper resource="classpath*:sqlMapperXml/RoleResourceMapper.xml"/>
+        <mapper resource="classpath*:sqlMapperXml/SysLogMapper.xml"/>
+    </mappers>
+</configuration>
